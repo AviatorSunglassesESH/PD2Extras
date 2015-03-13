@@ -40,7 +40,7 @@ function WeaponFactoryTweakData:_init_modpack_m4_ak()
 	name_id = "wpnmd_m16frontpost",
 	-- Uses a category which previously was hidden as it contained no items for the user to interact with (same category as vanilla front post)
 	type = "sight_special",
-	-- Not sure yet, needs investigation (Current guess, texture in menu?)
+	-- Not sure yet, needs investigation (Current guess, texture in menu?) (Another guess, allows it to be purchased)
 	pcs = {
             20,
             30,
@@ -52,5 +52,41 @@ function WeaponFactoryTweakData:_init_modpack_m4_ak()
 	unit = "units/payday2/weapons/wpn_fps_ass_m16_pts/wpn_fps_ass_m16_os_frontsight",
 	-- States what it is incompatible with
 --	forbids = {}
+	}
+	self.parts.wpn_fps_ass_m16_draghandle1_mod = {
+		stats = {},
+		name_id = "wpnmd_draghandle1",
+		type = "drag_handle",
+		pcs = {
+            20,
+            30,
+            40
+        },
+		a_obj = "a_dh",
+		unit = "units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_uupg_draghandle",
+	}
+	self.parts.wpn_fps_ass_m16_draghandle2_mod = {
+		stats = {},
+		name_id = "wpnmd_draghandle2",
+		type = "drag_handle",
+		pcs = {
+            20,
+            30,
+            40
+        },
+		a_obj = "a_dh",
+		unit = "units/pd2_dlc_akm4_modpack/weapons/wpn_fps_m4_uupg_draghandle_core/wpn_fps_m4_uupg_draghandle_core",
+	}
+	self.parts.wpn_fps_ass_m16_draghandle3_mod = {
+		stats = {},
+		name_id = "wpnmd_draghandle3",
+		type = "drag_handle",
+		pcs = {
+            20,
+            30,
+            40
+        },
+		a_obj = "a_dh",
+		unit = "units/pd2_dlc_akm4_modpack/weapons/wpn_fps_m4_uupg_draghandle_ballos/wpn_fps_m4_uupg_draghandle_ballos",
 	}
 end
